@@ -1,10 +1,38 @@
 body {
   background-color: black;
+  margin: 0;
+  font-family: "Montserrat";
 }
 
 h1 {
   color: white;
   text-align: center;
+  background-color: steelblue;
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  font-size: 100%;
+  font-weight: 700;
+  height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: steelblue;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: steelblue;
+  color: white;
 }
 
 .square {
@@ -13,18 +41,33 @@ h1 {
   background-color: yellow;
   float: left;
   margin: 1.66%;
+  cursor: pointer;
+  border-radius: 20%;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
 }
 .selected {
-  background-color: blue;
+  background-color: steelblue;
+  color: white;
 }
 
 #container {
   width: 30%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 #navBar {
   text-align: center;
   background-color: white;
   color: black;
+}
+
+#displayedColor {
+  font-size: 150%;
+}
+
+#message {
+  display: inline-block;
+  width: 40%;
 }
