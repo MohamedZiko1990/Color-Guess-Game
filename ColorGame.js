@@ -1,19 +1,30 @@
-//Create array of different colors
 var colors = generateRandoms(6);
-
-//Select the 6 Squares from the DOM
 var squares = document.getElementsByClassName("square");
-
-//Select the RGB Span in DOM
 var colorDisplayed = document.getElementById("displayedColor");
-
-// Select Color from Colors Array
 var pickedColor = pickColor();
-
-//Select the h2 Span in DOM
 var messageDisplay = document.getElementById("message");
+var h1 = document.querySelector("h1");
+var resetButton = document.getElementById("reset");
 
-//Change RGB Span to one of the array Colors
+resetButton.addEventListener("click", function() {
+  //Generate new Random Colors
+  colors = generateRandoms(6);
+  //change Squares colors
+  for (var i = 0; i < squares.length; i++) {
+    squares[i].style.backgroundColor = colors[i];
+  }
+  //change pickedcolor
+  pickedColor = pickColor();
+  //change assigned picked color to array
+  colorDisplayed.textContent = pickedColor;
+  // Remove message displayed
+  messageDisplay.textContent = "";
+  // change h1 background color
+  h1.style.backgroundColor = "black";
+  // Change button text
+  resetButton.textContent = "New Game";
+});
+
 colorDisplayed.textContent = pickedColor;
 
 for (var i = 0; i < squares.length; i++) {
@@ -28,6 +39,8 @@ for (var i = 0; i < squares.length; i++) {
     if (clickedColor === pickedColor) {
       changeColors(clickedColor);
       messageDisplay.textContent = "Correct";
+      h1.style.backgroundColor = clickedColor;
+      resetButton.textContent = "Play Again";
     } else {
       this.style.backgroundColor = "black";
       messageDisplay.textContent = "Try Again!";
