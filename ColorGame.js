@@ -52,7 +52,7 @@ resetButton.addEventListener("click", function() {
   // Remove message displayed
   messageDisplay.textContent = "";
   // change h1 background color
-  h1.style.backgroundColor = "black";
+  h1.style.backgroundColor = "steelblue";
   // Change button text
   resetButton.textContent = "New Game";
 });
