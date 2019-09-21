@@ -7,10 +7,6 @@ h1 {
   text-align: center;
 }
 
-h4 {
-  text-align: center;
-}
-
 .square {
   width: 30%;
   padding-bottom: 30%;
@@ -24,6 +20,8 @@ h4 {
   margin: 0 auto;
 }
 
-#message {
-  color: white;
+#navBar {
+  text-align: center;
+  background-color: white;
+  color: black;
 }
