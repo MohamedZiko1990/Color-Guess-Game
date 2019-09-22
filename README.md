@@ -8,12 +8,23 @@ The app is a color guessing game, in which you try to match one of the 6 generta
 
 ## Game Entities 
 
-#### Heading
+### Heading
 
-#### NewGame Button 
+- Contains the picked RGB color which you should be guessing 
+- The Picked color changes each time you press any of the three buttons 
 
-#### EasyMode Button 
+### NewGame Button
 
-#### HardMode Button 
+- The reset button in the game which generate new 6 or 3 colors according to the mode selected 
 
-#### Squares 
+### EasyMode Button 
+
+- Change the game to 3 colored squares only 
+
+### HardMode Button 
+
+- Change the game to 6 colored squares only 
+
+### Squares
+
+- The colored squares which you select from your own guess
